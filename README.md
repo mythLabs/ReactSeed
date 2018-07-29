@@ -14,3 +14,5 @@
 
 
   yarn add husky lint-staged prettier
+
+  saas precompiler
