@@ -13,4 +13,7 @@ deploy:
   domain: mythLabs.surge.sh
   project: ./build/
 on:
-  branch: React-seed-with-Travis
+  repo: mythLabs/ReactSeed
+  branch:  
+    only: 
+        -React-seed-with-Travis
