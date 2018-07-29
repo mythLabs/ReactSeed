@@ -6,14 +6,10 @@ cache:
     - node_modules
 script:
   - npm test
-  - npm run build
+  - yarn build
 deploy:
   provider: surge
   skip_cleanup: true
   domain: mythLabs.surge.sh
   project: ./build/
-on:
-  repo: mythLabs/ReactSeed
-  branch:  
-    only: 
-        -React-seed-with-Travis
+  on: React-seed-with-Travis
