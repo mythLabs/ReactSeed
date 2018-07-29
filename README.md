@@ -16,3 +16,7 @@
   yarn add husky lint-staged prettier
 
   saas precompiler
+
+  integration of flow
+
+  installing router
