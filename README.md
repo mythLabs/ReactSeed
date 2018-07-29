@@ -1,4 +1,6 @@
-  React Seed Application  https://travis-ci.org/mythLabs/ReactSeed.svg?branch=React-seed-with-Travis
+  React Seed Application  
+  ### Status
+    [![Build Status](https://travis-ci.org/mythLabs/ReactSeed.svg?branch=React-seed-with-Travis)](https://travis-ci.org/mythLabs/ReactSeed)
 
 
 
