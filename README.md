@@ -1,4 +1,4 @@
-  React Seed Application
+  React Seed Application  https://travis-ci.org/mythLabs/ReactSeed.svg?branch=React-seed-with-Travis
 
 
 
