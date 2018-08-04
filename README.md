@@ -1,28 +1,82 @@
-  React Seed Application  
+  React Seed Application   ![alt text](https://travis-ci.org/mythLabs/ReactSeed.svg?branch=React-seed-with-Travis)<br />
 
-  ~yarn install
-
-  ~yarn start
-
-  ~yarn build
-
-  ~yarn global add serve
-
-  ~serve -s build
+       A React Seed project with Sass preprocessing, Flow Integration, commit-preprocessing, Travis ci pipleling and surge integration out-of-the-box.
 
 
-  yarn add husky lint-staged prettier
+  Travis pipeline,steps in React-seed-with-Travis branch 
 
-  saas precompiler
 
-  integration of flow
+  #yarn install <br />
+      -Install all dependencies
 
-  installing router
+  #yarn start <br />
+      -Start application in development mode
 
-  Environment file
+  #yarn build <br />
+      -Generate solution build for release
 
-  added enzyme
+   
+  #yarn global add serve <br />
+      -A local Http server to rapidly run the build files
 
-  Setup-TravisCI
+  #serve -s build <br />
+      -Start the local dev server and open the file in build folder
 
-  Surge
+  #yarn add husky lint-staged prettier <br />
+      -Formatting Code Automatically when before code commit.Commit pre-processing added scripts in package.json
+
+  #saas precompiler <br />
+      -Creaitng Saas file, these will be compiles to css and used. they are already added to git ignore.Compile process is automated.
+
+  #integration of flow <br />
+      -A static type checker.<br />
+       run ~npm run flow (or yarn flow)
+
+  #react-router-dom installed <br />
+     
+  #Environment file <br />
+    .env - Common file used in both staging and development <br />
+    .env.development- file used only in development mode <br />
+    .evv.production- file used only in production <br />
+
+  #added enzyme <br />
+     -Assertion library
+
+  #source map explorer <br />
+    -Source map explorer analyzes JavaScript bundles using the source maps <br />
+    npm run build <br />
+    npm run analyze <br />
+
+  #Travis Ci pipe line and Surge deployment
+     
+     #surge.sh <br />
+     npm install --global surge <br />
+      Easy deployment for front-end developers <br />
+      run #npm run build && surge, it will ask for email/password to create account.
+
+      Step 1. <br />
+      #Travis.yml is added for entry level configuration (already added to solution)
+
+      Step 2. <br />
+      On local CMD run #surge token, and copy the token.
+
+      Step 3. <br />
+      Login to travisci and add environment variables SURGE_LOGIN,SURGE_TOKEN<br />
+      Where SURGE_LOGIN is the email you used when you set Surge up, and  SURGE_TOKEN is the token you copied from the output of surge token
+
+      Step 4. <br />
+      On travis find reporitory and enable CD/CI by flicking switch <br />
+
+      Step 5.<br />
+      Create commit, push to git and see it getting deployed.<br />
+
+
+
+
+
+      #FYI,
+      current configuration starts the automated process when comitted to 'React-seed-with-Travis' branch and deployed to mythLabs.surge.sh. Change as per your requirement.
+
+
+
+      
