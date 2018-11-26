@@ -44,4 +44,4 @@
   ### source map explorer <br />
     -Source map explorer analyzes JavaScript bundles using the source maps <br />
     npm run build <br />
-    npm run analyze <br />
+    npm run analyze <br /> 
